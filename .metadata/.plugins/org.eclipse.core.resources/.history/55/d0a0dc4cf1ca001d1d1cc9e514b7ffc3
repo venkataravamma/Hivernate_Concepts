@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author vevanipe
+ *
+ */
+module HibernateByXml {
+	requires org.hibernate.orm.core;
+}

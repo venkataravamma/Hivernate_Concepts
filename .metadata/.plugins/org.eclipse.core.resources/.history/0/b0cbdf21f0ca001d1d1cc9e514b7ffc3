@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">  
+  
+<hibernate-configuration>  
+  
+    <session-factory>  
+        <property name="hbm2ddl.auto">update</property>  
+        <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>  
+        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>  
+        <property name="connection.username">root</property>  
+        <property name="connection.password">root</property>  
+        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>  
+    <mapping resource="employee.hbm.xml"/>  
+    </session-factory>  
+  <property name="javax.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/studentdata" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password"
+				value="root" />
+			<property name="eclipselink.logging.level" value="SEVERE" />
+			<property name="eclipselink.ddl-generation"
+				value="create-or-extend-tables" />
+		</properties>
+</hibernate-configuration>  
